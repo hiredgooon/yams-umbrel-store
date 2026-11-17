@@ -24,8 +24,20 @@ while true; do
 
   sum=$(checksum)
   rm -f "$FLAG"
-  echo "[yams] Starting VPN"
-  /gluetun-entrypoint &
+  # Fork: a Proton file (tunnel address 10.2.0.2) runs gluetun's built-in Proton provider,
+  # which supports NAT-PMP port forwarding. The key is read from the file at start, never stored.
+  if grep -Eq '^[[:space:]]*Address[[:space:]]*=[[:space:]]*10\.2\.0\.2(/32)?([[:space:]]*,|[[:space:]]*$)' "$CONF"; then
+    pk=$(sed -n 's/^[[:space:]]*PrivateKey[[:space:]]*=[[:space:]]*//p' "$CONF" | head -n1 | tr -d '\r ')
+    addr=$(sed -n 's/^[[:space:]]*Address[[:space:]]*=[[:space:]]*//p' "$CONF" | head -n1 | cut -d, -f1 | tr -d '\r ')
+    echo "[yams] Proton file detected. Starting VPN with port forwarding (${PROTON_SERVER_COUNTRIES:-Australia})"
+    VPN_SERVICE_PROVIDER=protonvpn WIREGUARD_PRIVATE_KEY="$pk" WIREGUARD_ADDRESSES="${addr:-10.2.0.2/32}" \
+      SERVER_COUNTRIES="${PROTON_SERVER_COUNTRIES:-Australia}" PORT_FORWARD_ONLY=on VPN_PORT_FORWARDING=on \
+      /gluetun-entrypoint &
+    unset pk addr
+  else
+    echo "[yams] Starting VPN"
+    /gluetun-entrypoint &
+  fi
   pid=$!
   started=$(date +%s)
 

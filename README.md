@@ -1,3 +1,5 @@
+> **Personal fork (hiredgooon).** Unsupported and not maintained for anyone else. Change from upstream: YAMS uses gluetun's built-in ProtonVPN provider with NAT-PMP port forwarding when a Proton WireGuard file is pasted.
+
 # Canopy
 
 Apps for your Umbrel that Umbrel's own store doesn't have, kept on their newest versions and tested before every update.

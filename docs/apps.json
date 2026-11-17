@@ -1,16 +1,16 @@
 {
-  "generated": "2026-11-16",
+  "generated": "2026-11-17",
   "apps": [
     {
       "id": "canopy-yams",
       "name": "YAMS",
-      "version": "1.5.4",
+      "version": "1.5.4.1",
       "tagline": "Your own Netflix \u2014 movies, shows and subtitles, fully automatic",
       "category": "media",
       "icon": "https://cdn.jsdelivr.net/gh/Deepshah0308/canopy-umbrel-store@24f69a96df050bcb6c34e3a7be0c65303b4f1112/canopy-yams/icon.svg",
       "website": "https://yams.media",
       "port": 8746,
-      "updated": "2026-11-13"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-bigcapital",
@@ -21,7 +21,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/png/bigcapital.png",
       "website": "https://bigcapital.app",
       "port": 7414,
-      "updated": "2026-11-13"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-bytestash",
@@ -32,7 +32,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/bytestash.svg",
       "website": "https://github.com/jordan-dalby/ByteStash",
       "port": 7409,
-      "updated": "2026-11-10"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-feishin",
@@ -43,7 +43,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/feishin.svg",
       "website": "https://github.com/jeffvli/feishin",
       "port": 7408,
-      "updated": "2026-10-23"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-gatus",
@@ -54,7 +54,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/gatus.svg",
       "website": "https://gatus.io",
       "port": 7413,
-      "updated": "2026-11-12"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-jdownloader",
@@ -65,7 +65,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/jdownloader.svg",
       "website": "https://jdownloader.org",
       "port": 7402,
-      "updated": "2026-10-23"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-linkding",
@@ -76,7 +76,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/linkding.svg",
       "website": "https://linkding.link",
       "port": 7405,
-      "updated": "2026-10-23"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-miniflux",
@@ -87,7 +87,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/miniflux.svg",
       "website": "https://miniflux.app",
       "port": 7406,
-      "updated": "2026-11-15"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-mylar3",
@@ -98,7 +98,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/png/mylar.png",
       "website": "https://mylarcomics.com",
       "port": 7410,
-      "updated": "2026-11-13"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-netdata",
@@ -120,7 +120,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/nzbget.svg",
       "website": "https://nzbget.com",
       "port": 7407,
-      "updated": "2026-10-23"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-openhab",
@@ -131,7 +131,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/openhab.svg",
       "website": "https://www.openhab.org",
       "port": 7403,
-      "updated": "2026-11-09"
+      "updated": "2026-11-16"
     },
     {
       "id": "canopy-rustfs",
@@ -153,7 +153,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg/siyuan.svg",
       "website": "https://b3log.org/siyuan/en/",
       "port": 7404,
-      "updated": "2026-11-10"
+      "updated": "2026-11-16"
     }
   ]
 }
