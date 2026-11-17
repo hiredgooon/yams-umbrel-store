@@ -1,4 +1,4 @@
-> **Personal fork (hiredgooon).** Unsupported and not maintained for anyone else. Change from upstream: YAMS uses gluetun's built-in ProtonVPN provider with NAT-PMP port forwarding when a Proton WireGuard file is pasted.
+> **Personal fork (hiredgooon).** Unsupported and not maintained for anyone else. Change from upstream: gluetun asks Proton for a NAT-PMP forwarded port and passes it to qBittorrent.
 
 # Canopy
 

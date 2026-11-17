@@ -67,7 +67,7 @@ services:
     environment:
       APP_PREFIX: canopy-yams
       JELLYFIN_PORT: "8097"
-      YAMS_VERSION: "1.5.4.1"
+      YAMS_VERSION: "1.5.4.2"
       DATA_DIR: /yams
       BACKUP_DIR: /backups
       API_SOCK: /sock/dashboard.sock
@@ -285,9 +285,10 @@ services:
       HTTPPROXY: "on"
       HTTPPROXY_STEALTH: "on"
       UPDATER_PERIOD: "0"
-      # Fork: Proton port forwarding (used when a Proton file is pasted; see vpn-wrapper.sh).
+      # Fork: Proton NAT-PMP port forwarding on the pasted (custom) WireGuard file.
       # Commands from the gluetun wiki; qBittorrent already skips auth on localhost.
-      PROTON_SERVER_COUNTRIES: "Australia"
+      VPN_PORT_FORWARDING: "on"
+      VPN_PORT_FORWARDING_PROVIDER: "protonvpn"
       VPN_PORT_FORWARDING_UP_COMMAND: >-
         /bin/sh -c 'wget -O- -nv --retry-connrefused --post-data "json={\"listen_port\":{{PORT}},\"current_network_interface\":\"{{VPN_INTERFACE}}\",\"random_port\":false,\"upnp\":false}" http://127.0.0.1:8080/api/v2/app/setPreferences'
       VPN_PORT_FORWARDING_DOWN_COMMAND: >-
